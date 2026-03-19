@@ -17,7 +17,7 @@ public class Contato {
     }
 
     public String getNome(){
-        return nome;
+        return this.nome;
     }
     public String getTelefone(){
         return telefone;
