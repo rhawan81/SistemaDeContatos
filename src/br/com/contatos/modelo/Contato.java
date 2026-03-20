@@ -25,4 +25,18 @@ public class Contato {
     public String email(){
         return email;
     }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public void setTelefone(String telefone){
+        this.telefone = telefone;
+
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
+    @Override // Metodo que substitui o original onde se quisermos imprimir o objeto iria mostrar o endereço de memoria por isso usamos ele para mostrar as informações do contato
+    public String toString(){ // metodo que retorna nome , telefone, email.
+        return "Nome: " + nome + " | Tel: " + telefone + " | Email: " + email;
+    }
 }
